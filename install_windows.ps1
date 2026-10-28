@@ -1,4 +1,4 @@
-﻿﻿$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 # DroidManager Windows用インストーラー
 #   1. 不足している Python / scrcpy / adb を winget で自動インストール (確認あり)
@@ -72,6 +72,18 @@ if (-not $py) {
 }
 
 # ---- 2. ファイル配置 ----------------------------------------------------------
+# 再インストール時、実行中の DroidManager / adb がファイルをロックしているので先に終了する
+if (Test-Path $dst) {
+    foreach ($adb in (Get-ChildItem -Path $dst -Recurse -Filter "adb.exe" -ErrorAction SilentlyContinue)) {
+        try { & $adb.FullName kill-server 2>$null | Out-Null } catch {}
+    }
+    Get-CimInstance Win32_Process -ErrorAction SilentlyContinue | Where-Object {
+        ($_.ExecutablePath -and $_.ExecutablePath.StartsWith($dst, [StringComparison]::OrdinalIgnoreCase)) -or
+        ($_.CommandLine -and $_.CommandLine -like "*$dst*droidmanager.py*")
+    } | ForEach-Object { Stop-Process -Id $_.ProcessId -Force -ErrorAction SilentlyContinue }
+    Start-Sleep -Seconds 1
+}
+
 Write-Host "==> $dst にインストールします"
 New-Item -ItemType Directory -Force -Path $dst | Out-Null
 foreach ($f in "droidmanager.py", "droidmanager.png", "droidmanager.ico") {
