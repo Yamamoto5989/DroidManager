@@ -1,6 +1,6 @@
 # DroidManager
 
-Scrcpyで複数のAndroid端末をまとめて管理するUbuntu用GUIアプリ。
+ADBとScrcpyを使って複数のAndroidデバイスを管理するソフトウェアです。WindowsとDebianで動作します。
 
 ## Debianで使う
 
