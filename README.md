@@ -13,7 +13,7 @@ cd droidmanager
 アプリ一覧に「DroidManager」が追加されます。ターミナルからは `droidmanager` でも起動できます。
 削除は `./uninstall.sh`(aptで入れたパッケージは残ります)。
 
-## 必要なパッケージ (Ubuntu)
+## 必要なパッケージ (Debian)
 
 | パッケージ | 区分 | 用途 |
 |---|---|---|
