@@ -1,0 +1,2 @@
+# DroidManager
+ADBとScrcpyを使って複数のAndroidデバイスを管理するソフトウェアです。WindowsとDebianで動作します。
