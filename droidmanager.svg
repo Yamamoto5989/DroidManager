@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2fa58a"/>
+      <stop offset="1" stop-color="#17614f"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <!-- 左のスマホ -->
+  <rect x="38" y="52" width="86" height="152" rx="14" fill="#f3faf8"/>
+  <rect x="46" y="68" width="70" height="112" rx="5" fill="#1d3b34"/>
+  <rect x="54" y="78" width="24" height="24" rx="6" fill="#5fd3b4"/>
+  <rect x="84" y="78" width="24" height="24" rx="6" fill="#8fe3cc"/>
+  <rect x="54" y="108" width="24" height="24" rx="6" fill="#8fe3cc"/>
+  <rect x="84" y="108" width="24" height="24" rx="6" fill="#5fd3b4"/>
+  <circle cx="81" cy="192" r="5" fill="#b9d6ce"/>
+  <!-- 右のスマホ -->
+  <rect x="132" y="52" width="86" height="152" rx="14" fill="#f3faf8"/>
+  <rect x="140" y="68" width="70" height="112" rx="5" fill="#1d3b34"/>
+  <rect x="148" y="78" width="54" height="10" rx="4" fill="#5fd3b4"/>
+  <rect x="148" y="94" width="54" height="10" rx="4" fill="#8fe3cc"/>
+  <rect x="148" y="110" width="38" height="10" rx="4" fill="#8fe3cc"/>
+  <rect x="148" y="132" width="54" height="36" rx="6" fill="#2e6f60"/>
+  <circle cx="175" cy="192" r="5" fill="#b9d6ce"/>
+</svg>
