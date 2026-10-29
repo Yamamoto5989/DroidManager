@@ -3,7 +3,10 @@
 ADBとScrcpyを使って複数のAndroidデバイスを管理するソフトウェアです。WindowsとDebianで動作します。
 
 ## Debianで使う
-
+```
+sudo apt install droidmanager
+```
+またわ
 ```
 unzip droidmanager.zip
 cd droidmanager
