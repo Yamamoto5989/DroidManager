@@ -6,7 +6,7 @@ ADBとScrcpyを使って複数のAndroidデバイスを管理するソフトウ�
 ```
 sudo apt install droidmanager
 ```
-またわ
+または
 ```
 unzip droidmanager.zip
 cd droidmanager
