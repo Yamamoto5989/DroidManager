@@ -4,9 +4,8 @@ ADBとScrcpyを使って複数のAndroidデバイスを管理するソフトウ�
 
 ## Debianで使う
 ```
-curl -fsSL https://raw.githubusercontent.com/Yamamoto5989/DroidManager/main/install_apt.sh -o install_apt.sh
-bash install_apt.sh
-sudo apt install droidmanager
+curl -fsSL https://raw.githubusercontent.com/Yamamoto5989/DroidManager/main/install_apt.sh | bash
+sudo apt update && sudo apt install droidmanager
 ```
 または
 ```
